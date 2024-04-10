@@ -1,0 +1,30 @@
+body {
+  .buzzer-container {
+  display: flex;
+  justify-content: center;
+}
+
+.buzzer {
+  position: relative; /* Make the button container relative */
+  padding: 20px 40px;
+  margin: 10px;
+  font-size: 18px;
+  background-color: #fffc34;
+  border: none;
+  color: rgb(178, 213, 0);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cookie-img {
+  position: absolute; /* Position the cookie image absolutely */
+  top: 0;
+  right: 0;
+  width: 40px; /* Adjust the width of the cookie image as needed */
+  height: 40px; /* Adjust the height of the cookie image as needed */
+  transform: translate(50%, -50%); /* Center the image on the top right corner of the button */
+}
+}
+
+

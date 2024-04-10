@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hit Buzzer</title>
+    <style>
+        body {
+            background-image: url('https://cdn.suwalls.com/wallpapers/nature/amazing-sunset-colors-reflected-in-the-clear-water-53369-1920x1200.jpg');
+        }
+
+        /* Style for buzzer text */
+        .buzzer-text {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        /* Style for the button */
+        .buzzer-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .buzzer-button {
+            padding: 20px 40px;
+            margin: 10px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            border: none;
+            color: rgb(0, 0, 0);
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .buzzer-button:hover {
+            background-color: #45a049;
+        }
+
+        .cookie-img {
+            width: 40px;
+            height: 40px;
+            vertical-align: middle;
+            margin-left: 10px;
+        }
+
+        #message {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Buzzer text -->
+    <div class="buzzer-text">
+        Do you want a treat ? Buzz me  😊
+    </div>
+
+    <!-- Buzzer button -->
+    <div class="buzzer-container">
+        <button class="buzzer-button" onclick="buzz('Buzzer')">Buzzer<img src="https://icons.iconarchive.com/icons/shek0101/scardi/256/open-folder-icon.png" class="cookie-img"></button>
+    </div>
+
+    <!-- Congratulations message -->
+    <div id="message"></div>
+
+    
+
+    <script>
+        
+
+        function buzz(buzzerName) {
+            document.getElementById("message").innerHTML = `Congratulations! You won a cookie . 🍪`;
+        }
+    </script>
+</body>
+</html>
