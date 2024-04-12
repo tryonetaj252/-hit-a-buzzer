@@ -1,2 +1,5 @@
-background-image: url('https://cdn.suwalls.com/wallpapers/nature/amazing-sunset-colors-reflected-in-the-clear-water-53369-1920x1200.jpg');
-
+const clickbuttonElement = document.querySelector('#click-button')
+console.dir(clickbuttonElement)
+clickbuttonElement.addEventListener('click', ()=>{
+    console.log('Congratulation you Won! a Cookie')
+})
